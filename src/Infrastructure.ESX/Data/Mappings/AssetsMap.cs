@@ -8,7 +8,7 @@ namespace Infrastructure.ESX.Data.Mappings
     {
         public void Configure(EntityTypeBuilder<Assets> builder)
         {
-            builder.ToTable("Brands");
+            builder.ToTable("Assets");
 
             builder.HasKey(b => b.Id)
                 .HasName("Id");
@@ -19,9 +19,9 @@ namespace Infrastructure.ESX.Data.Mappings
             builder.Property(b => b.Description)
                 .HasColumnName("Description");
 
-            builder.Property(b => b.NumberAssets)
-                .HasColumnName("NumberAssets")
-                .ValueGeneratedOnAdd();
+            builder.HasIndex(b => b.NumberAssets)
+                .HasName("NumberAssets")
+                .IsUnique();
 
         }
     }

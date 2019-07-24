@@ -7,9 +7,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7EB45030-AA6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Desafio.ESX.Api", "src\Desafio.ESX.Api\Desafio.ESX.Api.csproj", "{10051AEB-4064-4958-B90D-EACAB4B53BC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infrastructure.ESX", "src\Infrastructure.ESX\Infrastructure.ESX.csproj", "{8B7A9F4B-1C65-4B72-9907-D50404356FDA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure.ESX", "src\Infrastructure.ESX\Infrastructure.ESX.csproj", "{8B7A9F4B-1C65-4B72-9907-D50404356FDA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationCore.ESX", "src\ApplicationCore.ESX\ApplicationCore.ESX.csproj", "{8C1EB7D4-20C4-4A82-803B-8B30DB2EBA18}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApplicationCore.ESX", "src\ApplicationCore.ESX\ApplicationCore.ESX.csproj", "{8C1EB7D4-20C4-4A82-803B-8B30DB2EBA18}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24F79397-2E91-4907-A40F-4141DED70E05}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
