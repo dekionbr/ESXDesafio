@@ -19,9 +19,9 @@ namespace Infrastructure.ESX.Data.Mappings
             builder.Property(b => b.Description)
                 .HasColumnName("Description");
 
-            builder.HasIndex(b => b.NumberAssets)
-                .HasName("NumberAssets")
-                .IsUnique();
+            builder.Property(b => b.NumberAssets)
+                .HasColumnName("NumberAssets")
+                .HasDefaultValueSql("NEXT VALUE FOR autoincremento");
 
         }
     }

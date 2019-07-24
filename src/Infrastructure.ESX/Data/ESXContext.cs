@@ -18,6 +18,8 @@ namespace Infrastructure.ESX.Data
 
             modelBuilder.ApplyConfiguration(new BrandMap());
             modelBuilder.ApplyConfiguration(new AssetsMap());
+
+            modelBuilder.HasSequence<int>("autoincremento").StartsAt(1).IncrementsBy(1);
         }
     }
 }
