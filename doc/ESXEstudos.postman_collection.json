@@ -1,0 +1,414 @@
+{
+	"info": {
+		"_postman_id": "2d26e159-2787-441a-9f1b-1a247cb65f91",
+		"name": "ESXEstudos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Brands",
+			"item": [
+				{
+					"name": "Get Brands",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Brand",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Brand",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Intel\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand/",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Brand",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Brand",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Philips\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get assets by brandId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/brand/3/assets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"brand",
+								"3",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Assets",
+			"item": [
+				{
+					"name": "Get Assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/assets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get One Assets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/assets/4",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"assets",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Assets",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 1,\n    \"name\": \"Monitor Philips\",\n    \"brandId\": 1,\n    \"description\": \"Monitor wide 17\",\n    \"numberAssets\": 1\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/assets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Assets",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/assets/3",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"assets",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Assets",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": 4,\n    \"name\": \"Monitor Philips\",\n    \"brandId\": 1,\n    \"description\": \"Monitor wide 17 v3\",\n    \"numberAssets\": 3\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/assets",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"assets"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Get accounts",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/account",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post account signin",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"email\": \"admin@gmail.com\",\n\t \"password\": \"Pass@word1\",\n\t \"rememberme\": true\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/account/signin",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post account",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"type": "text",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t \"name\": \"Admin 2\",\n\t \"email\": \"admin@ESX.com\",\n\t \"password\": \"Pass@word1\",\n\t \"confirmpassword\": \"Pass@word1\"\n}"
+						},
+						"url": {
+							"raw": "https://localhost:44324/api/v1/account",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"account"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Account",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:44324/api/v1/account/ee6a8dec-e5ef-4f0b-88ab-b1e2b275577c",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "44324",
+							"path": [
+								"api",
+								"v1",
+								"account",
+								"ee6a8dec-e5ef-4f0b-88ab-b1e2b275577c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
